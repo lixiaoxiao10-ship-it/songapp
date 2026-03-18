@@ -347,7 +347,7 @@ function playSong(idx) {
     if (prev) prev.classList.remove('playing');
   }
   currentIdx = idx;
-  audio.src = 'audio/' + s.file;
+  audio.src = s.file;
   audio.load();
   audio.play().then(() => {
     isPlaying = true;
